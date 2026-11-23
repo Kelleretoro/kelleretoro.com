@@ -1,0 +1,42 @@
+kellerEToro — sitio para publicar en Netlify
+=============================================
+Esta carpeta es tu sitio ya limpio, la versión actual con todos los ajustes.
+No trae la barra de "Vista previa" ni la sección de pasos: es solo tu sitio.
+
+Archivos:
+- index.html : tu sitio completo. Ya NO trae las fotos incrustadas dentro del
+  archivo: ahora cada foto es un archivo aparte en esta misma carpeta, por eso
+  la página carga mucho más rápido y el navegador las guarda en caché.
+  Ya trae en el <head> el script de Google AdSense (ca-pub-2386671641337381)
+  para que se puedan mostrar anuncios; para que aparezcan, los "Auto Ads"
+  deben estar prendidos en tu cuenta de AdSense. También trae datos
+  estructurados (JSON-LD) para que Google entienda mejor tu sitio y el enlace
+  canónico a https://kelleretoro.com/ .
+- Las fotos del sitio (no las borres, el index.html las necesita):
+  logo-keller.png, foto-principal-angel.jpg, deidad-tequila.png,
+  juego-pelota-teotihuacan.png, cabeza-keller.png, arco-cabo-san-lucas.jpg,
+  luna-de-sangre.jpg y las 5 de la galería (galeria-concierto-navideno.jpg,
+  galeria-torre-latinoamericana.jpg, galeria-convento-santa-ana.jpg,
+  galeria-mascara-maya.jpg, galeria-atardecer-la-paz.jpg).
+  foto-principal-angel.jpg es además la imagen que Facebook/Meta y X muestran
+  cuando compartes el enlace de tu sitio.
+
+Para PUBLICAR POR PRIMERA VEZ (Netlify Drop, sin comandos ni GitHub):
+1. Entra a https://app.netlify.com/drop (crea tu cuenta gratis si no tienes, o entra con GitHub/Google).
+2. Arrastra esta carpeta COMPLETA a la página.
+3. Netlify te da una dirección temporal, algo como kelleretoro.netlify.app. Revísala con calma.
+4. Solo cuando esa versión te convenza, conecta tu dominio www.kelleretoro.com:
+   en Netlify, Site settings -> Domain management -> Add a domain, y sigue lo que te pida.
+   Tu sitio de Google Sites sigue en vivo hasta que hagas ese cambio.
+
+Para ACTUALIZAR un sitio ya publicado con una versión nueva:
+1. Entra a Netlify, abre tu sitio y ve a la pestaña "Deploys".
+2. Arrastra la carpeta COMPLETA nueva en la zona de despliegue de arriba.
+3. Se publica la nueva versión en la MISMA dirección, sin cambiar nada más.
+   (No hagas un Drop nuevo, porque eso crea otro sitio con otra dirección.)
+
+Para que Facebook/Meta actualice la vista previa del enlace:
+Facebook guarda la vista previa vieja en caché. Después de publicar la versión
+nueva, entra a https://developers.facebook.com/tools/debug/ , pega
+https://kelleretoro.com/ y dale a "Scrape Again" (o "Depurar" / "Volver a
+extraer"). Así Meta vuelve a leer el sitio y muestra la foto del Ángel.

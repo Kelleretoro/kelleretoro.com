@@ -1,0 +1,7 @@
+User-agent: *
+
+Content-Signal: search=yes, ai-input=no, ai-train=no
+
+Allow: /
+
+Sitemap: https://kelleretoro.com/sitemap.xml
